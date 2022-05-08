@@ -1,0 +1,1151 @@
+UNF N Number: 00931445
+Exercises: https://www.w3resource.com/php-exercises/php-class-exercises.php
+
+OOP: https://developer.hyvor.com/tutorials/php/oop-intro
+
+OOP is harder to understand compared to other programming techniques. But, if you understand the following 4 terms you are almost done!
+
+Class
+Object
+Properties
+Methods (or Functions)
+
+CLASS: The first term we find in OOP is class. A class is a blueprint. It is a piece of code describing how to manage a topic or task in the way we want.
+
+OBJECT: An Object is an instance of a class. It is like a house built from the blueprint. You can build more than one object from a class like creating multiple houses from a blueprint.
+
+PROPERTIES: Properties are variables of an object. They are the values associated with the object. They describe the appearance of the Object.
+
+METHODS: Methods are actions that are performed on Objects. Changing the color of my house is a method performed on my house object.
+
+PHP DECLARING A CLASS
+The class keyword followed by the class name is used to declare a class.
+
+<?php
+class House {
+	// code
+}
+
+PROPERTIES
+Properties are variables
+
+<?php
+class House {
+	public $primaryColor = 'black';
+	public $secondaryColors = [
+		'bathroom' => 'white',
+		'bedroom' => 'light pink',
+		'kitchen' => 'light blue'
+	];
+	public $hasPool = false;
+	public $extra;
+}
+
+OBJECTS
+We can create multiple objects from a class. These objects are called instances of the class. This process is called instantiation.
+
+After the class declaration, you can create instances from it.
+
+
+$myHouse = new House();
+$friendHouse = new House();
+
+Now each object is created having the default values of the class. You can check it by echoing the color of each object.
+
+
+echo $myHouse -> primaryColor;
+echo $friendHouse -> primaryColor;
+
+Both would echo out the default value black.
+
+Tip: When accessing properties and methods of an object through the object operator, the dollar sign $ is not used with the property or method name.
+
+You can also change the default property values of the class to make each house unique.
+
+
+$myHouse -> primaryColor = 'red';
+$friendHouse -> primaryColor = 'yellow';
+
+Now, the color of my house is red and the color of my friend's house is yellow.
+
+METHODS 
+Methods are used to perform actions.
+In Object Oriented Programming in PHP, methods are functions inside classes. Their declaration and behavior are almost similar to normal functions, except their special uses inside the class.
+
+Let's declare a method inside a class named Example class to echo out a simple string that we give.
+
+
+<?php
+class Example {
+	public function echo($string) {
+		echo $string;
+	}
+}
+
+HOW TO CALL A METHOD
+$example = new Example();
+$example -> echo('Hello World');
+
+CHANGING A PROPERTY USING METHODS 
+<?php
+class House {
+	public $primaryColor = 'black';
+	public function changeColor($color) {
+		$this -> primaryColor = $color;
+	}	
+}
+
+// creates an object from the class
+$myHouse = new House();
+
+# black (default value)
+echo $myHouse -> primaryColor;
+
+// change the color of the house
+$myHouse -> changeColor('white');
+	
+# white
+echo $myHouse -> primaryColor;
+
+-=-=-=-=-=-=-=-=-
+Would you like my Mother-In-Laws contact info?
+
+She's looking for basically a position that's home based. Something that she can do on her own time (no set hours). Not a customer service type position.
+
+Her position at her old company was Director of Revenue Accounting.
+
+Kbl0401@outlook.com
+
+She has Microsoft 365 so she has outlook, excel, word, etc. she has a printer and scanner if needed as well.
+
+(240) 994-4549
+43 mins ago
+B
+Her name is Kristine Lynch
+===========================
+
+
+REMOVE COOKIE
+setcookie('Hello', null, -1, '/'); 
+
+
+David, you should have received an email to pay your registration fee or full tuition. Check your spam folder.
+
+If you can't find it you can pay here: https://www.paypal.com/paypalme2/jaxcode
+
+Payment reserves your seat.
+
+If you already paid please disregard.
+
+Thank you!
+
+Dr. Fitzmeyer
+
+
+
+
+Making a Wordpress Template
+https://www.youtube.com/watch?v=oTRZYnYQlmo
+
+21 STARTER TEMPLATES FOR WORDPRESS: https://www.wpbeginner.com/wp-themes/21-best-wordpress-starter-themes-for-developers/
+
+How to make your own wordpress theme 2019
+https://www.youtube.com/watch?v=pFMgAWkrk8o&t=2076s
+
+Lesson 1: 
+https://www.wpbeginner.com/wp-themes/wordpress-template-hierarchy-explained/
+https://www.wpbeginner.com/wp-themes/wordpress-body-class-101-tips-and-tricks-for-theme-designers/
+WP Codex: https://developer.wordpress.org/themes/
+Go to wp-content/themes
+create a folder
+touch index.php header.php footer.php style.css
+Go to Wordpress Codex for style.css
+Copy Comment data into style.css
+Change the data
+Add screenshot.jpg
+Add to header
+Add to footer
+Hello World to index.php
+show the missing headers and footers
+include the header and footer with get_header() and get_footer()
+create css folder with file jaxcode.css, add some css to it
+create js folder with jaxcode.js, only add a comment for now
+create functions.php in root and create function to include css and js, see the codex: https://developer.wordpress.org/themes/basics/including-css-javascript/
+add_action: https://developer.wordpress.org/themes/basics/theme-functions/
+For specific frontpage create front-page.php
+Add standard page: page.php
+For single blog page: single.php
+For blog archive: archive.php
+
+
+
+-=-=-=-=-=-=-=-=-=-=-
+What programmers don't tell you
+https://www.youtube.com/watch?v=wvjxNzUqjWw
+https://www.youtube.com/watch?v=gWjofpeBUU4
+PHP in 2019 - Let's talk about it
+https://www.youtube.com/watch?v=gWjofpeBUU4
+
+-=-=-=-=-=-=-=-=-=-
+July 1 email, 14:26 from Shannon
+Once the event passes 8 hours per day there is a discount.  For this particular event, I would recommend looking into the University Center as they do block rates that may be cheaper for the event you are looking to host. Rates are found here: https://www.unf.edu/universitycenter/Rooms_and_Rates.aspx.  If you want to stay at the Student Union I can speak with my Director about the pricing.
+
+-=-=-=-=-=-=-
+
+https://www.truecodex.com/course/magento-2-module-development/how-to-create-table-and-install-sample-data-in-magento-2
+
+https://www.truecodex.com/course/magento-2/how-to-add-custom-field-in-magento-2-registration-form
+
+https://us.fullscript.com/u/catalog?c=Q2F0ZWdvcnktMjM4ODg%3D
+
+https://us.fullscript.com/u/prescription
+
+https://www.mageplaza.com/magento-2-module-development/how-to-create-crud-model-magento-2.html
+
+https://aionhill.com/magento-2-module-development-part1
+
+
+-=-=-=-=-=-=-
+-=-=-=-=-=-=-
+-=-=-=-=-=-=-
+
+Your Recovery ID:	25013716119
+FEI Number: (FEIN)	841857293
+
+Your Recovery ID:	26556019019
+FEI Number: (FEIN)	841857293
+
+Your Recovery ID:	26561819019
+FEI Number: (FEIN)	841857293
+
+Tickets link: https://jaxcode.com/open-ticket/
+
+n01162792@ospreys.unf.edu, zack7594@gmail.com, bacoladesign@gmail.com, landriganlr@gmail.com, raywhitted@gmail.com, jason-rob@live.com, tigervscrane@hotmail.com, castleberryk45@gmail.com, leislel@bellsouth.net, altoriaewhite@gmail.com, blake@jaxcode.com, zach@jaxcode.com, dennis@jaxcode.com, sarah@jaxcode.com, lilly@jaxcode.com, taibiayub@gmail.com, r_sunderland@hotmail.com, drewsterms@yahoo.com, sebryant816@yahoo.com, missemmajohnston@gmail.com, pschultz1988@gmail.com, daglenn@gmail.com
+
+
+missemmajohnston@gmail.com, drewsterms@yahoo.com, r_sunderland@hotmail.com, sebryant816@yahoo.com
+-=-=-=-=-=-=-
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142557155-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-142557155-1');
+</script>
+
+
+-=-=-=-=-=-=-
+Javascript Tip calculator
+-=-=-=-=-=-=-
+Font Awesome
+https://fontawesome.com/v4.7.0/icons/
+-=-=-=-=-=-=-
+Bootstrap starter: https://getbootstrap.com/docs/3.3/examples/sticky-footer-navbar/
+-=-=-=-=-
+1800Accountant
+drf@jaxcode.com
+sbf...
+https://1800accountant.com
+-=-=-=-=-
+Slack
+https://jaxcodeacademy.slack.com
+drf@jaxcode.com
+sbf...
+-=-=-=-=-
+Instagram
+user=jaxcodeacademy
+pass=sbf...
+support@jaxcode.com
+-=-=-=-=-
+Youtube account
+user=drf@jaxcode.com
+pass=sbf...
+-=-=-=-=-
+ShareThis
+email=support@jaxcode.com
+password=sbf...
+-=-=-=-=-
+Vimeo
+drf@jaxcode.com
+sbf...
+
+WEBEX
+https://admin.webex.com/
+email=drf@jaxcode.com
+pass=sbfMD123 
+
+Meetings Dashboard
+https://jaxcodeacademy.my.webex.com/webappng/sites/jaxcodeacademy.my/dashboard
+-------------------
+Advanced Web dev
+
+OOP: https://developer.hyvor.com/tutorials/php/oop-objects
+https://developer.hyvor.com/
+
+
+----====----====----====----
+
+Fill out these applications for: Veteran Employment Through Technology Education Courses for Training Providers (VET TEC)
+https://benefits.va.gov/GIBILL/fgib/VetTec_Providers.asp
+
+https://www.benefits.va.gov/GIBILL/FGIB/VetTecParticipationAgreement.pdf
+
+Email from Blake Seymour:
+Do you guys plan to participate in the new VET TEC program that is
+> being offered by the VA for information technology? I read about it
+> here: https://benefits.va.gov/gibill/fgib/vettec.asp
+
+williamblakeseymour@gmail.com
+---------------------------------------
+emails
+I created an email account for you to use for all Jax Code Related business
+https://webmail.webfaction.com
+iesha@jaxcode.com 
+username=jca_iesha 
+password=3db166
+when you first log in it will prompt you for an email. Enter iesha@jaxcode.com
+
+lilly@jaxcode.com jca_lilly
+
+---------------------------------------
+
+
+Jax Code Academy logo font is KEFA
+
+
+PAYPAL PRO
+To complete your PayPal Payments Pro application, please enter a username and password different from your existing PayPal account login.
+You'll use these new credentials to manage your PayPal Payments Pro account at manager.paypal.com
+user=drfitzmeyer
+pass=sbf...
+
+
+
+
+PayPal ME link: paypal.me/jaxcode
+
+Templates to make for Themeforest.com
+https://yumblekids.com/
+https://bollyx.com/
+
+New site Footer Title Bar color: #3db166
+
+
+http://jaxcode54.zachd29.webfactional.com/zachnewportfolio/mainfiles/Template/
+
+Paypal Subscription Integration
+https://www.codexworld.com/paypal-subscriptions-payment-gateway-integration-php/
+
+PHP login/Registration
+https://daveismyname.blog/login-and-registration-system-with-php
+
+
+
+craigslist username = sfitzmeyer@yahoo.com, L1
+
+IMPORTANT - FURTHER ACTION IS REQUIRED TO COMPLETE YOUR REQUEST !!!
+
+FOLLOW THE WEB ADDRESS BELOW TO:
+PUBLISH YOUR AD
+EDIT (OR CONFIRM AN EDIT TO) YOUR AD
+VERIFY YOUR EMAIL ADDRESS
+DELETE YOUR AD
+If not clickable, please copy and paste the address to your browser:
+
+THIS LINK IS A PASSWORD. DO NOT SHARE IT - anyone who has a copy of this link can edit or delete your posting.
+
+https://post.craigslist.org/u/nmC1gIj46BGVdx4VA4HJzg/x4p9r
+
+PLEASE KEEP THIS EMAIL - you may need it to manage your posting!
+
+Your posting will expire off the site 30 days after it was created. 
+
+Thanks for using craigslist!
+
+================
+
+
+
+
+Understanding HTML Form Encoding: URL Encoded and Multipart Forms
+https://dev.to/sidthesloth92/understanding-html-form-encoding-url-encoded-and-multipart-forms-3lpa
+
+
+http://brackets.io/ Free editor for Mac or Windows
+
+Natasha Terry (Parent) 904-536-6252
+Emoreg (son, high school sophomore)
+Renee Williams (sponsor)
+904-422-5528
+soulfoodbyrenee@gmail.com
+
+ADVANCED WEB DEV BOOTCAMP LESSONS
+
+ASCII vs UTF-8 video explanation: https://www.youtube.com/watch?v=MijmeoH9LT4
+
+1. XML
+	w3schools
+	Foodcense database export Glycemic Index Table to XML format
+2. SQL
+3.
+
+
+I left off at: XML HttpRequest
+https://www.w3schools.com/xml/xml_http.asp
+
+Week 1
+
+Javascript Introduction
+XML
+SQL Advanced
+OOP php
+JQuery
+Binary
+ASCII vs UTF-8
+
+7 bits = 1 byte
+64	32	16	8	4	2	1 = 127
+1	0	0	0	0	0	1 = 65 = A
+1	0	0	0	0	1	0 = 66 = B
+1	0	0	0	0	1	1 = 67 = C
+1	0	0	0	1	0	0 = 68 = D
+1   0	0	0	1	0	1 = 69 = E
+1   0	0	0	1	1	0 = 70 = F
+1   0	0	0	1	1	1 = 71 = G
+1   0	1	1	0	1	0 = 90 = Z
+1   1	1	1	1	1	1 = 127 = DEL
+
+1 0 0 0 0 1 0 | 1 0 0 0 1 0 1 | 1 0 0 0 1 0 0 = BED = 3 Bytes
+
+kilobyte = 2^10 or 1024 Bytes
+2	4	8	16	32	64	128	256	512	1024
+
+1 byte = 8 bits
+1 kilobyte = 1024 bytes
+1 megabyte = 1024 kilobytes
+1 gigabyte = 1024 megabytes
+1 terabyte = 1024 gigabytes
+1 petabyte = 1024 terabytes
+1 exabyte  = 1024 petabytes
+
+
+
+128 64 32 16 8 4 2 1 = 255 = UTC-8 = unicode
+1 	1   1  1 1 1 1 1
+
+CREATE ASCII Table
+https://www.smashingmagazine.com/2012/06/all-about-unicode-utf8-character-sets/
+
+<html>
+<body>
+<style type="text/css">p {float: left; padding: 0 15px; margin: 0; font-size: 80%;}</style>
+<script type="text/javascript">
+for (var i=0; i<128; i++) document.writeln ((i%32?’:'<p>') + i + ': ' + String.fromCharCode (i) + '<br>');
+</script>
+</body>
+</html>
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+JS Video Tutorials: https://www.youtube.com/watch?v=u0Mq3FzpsmI
+
+Ten Things A Serious JavaScript Developer Should Learn
+https://benmccormick.org/2017/07/19/ten-things-javascript/
+
+
+10 JavaScript concepts you need to know for interviews
+https://codeburst.io/10-javascript-concepts-you-need-to-know-for-interviews-136df65ecce
+
+***HELLO!!!******
+Javascript Lesson Plan from this::::
+
+You Don't Know JS - tutorial series
+https://github.com/getify/You-Dont-Know-JS/blob/master/up%20%26%20going/ch1.md
+
+Apache Tutorials for Beginners
+https://www.guru99.com/apache.html
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+https://studentloanhero.com/featured/student-loans-for-coding-bootcamp/
+1. Research the federal EQUIP program
+In 2016, the U.S. Department of Education announced the launch of the Educational Quality through Innovation Partnerships (EQUIP) program. EQUIP is a pilot program that allows low-income students to qualify for federal financial aid to pay for non-traditional education programs like coding boot camps.
+
+Students who qualify for EQUIP can access all forms of federal aid: including student loans and grants. As a low-income student, you could receive a Pell Grant for coding boot camp.
+
+Web Tools Must Haves: https://skillcrush.com/2017/03/20/front-end-developer-skills/
+
+Blockchain Technology: https://blockgeeks.com/guides/what-is-blockchain-technology/
+
+https://www.w3resource.com/php/classes-objects/php-object-oriented-programming.php
+
+https://www.coderbyte.com/
+https://medium.freecodecamp.org/the-10-most-popular-coding-challenge-websites-of-2016-fb8a5672d22f
+
+
+Investor Pitch Deck
+https://pitchdeck.improvepresentation.com/what-is-a-pitch-deck
+
+Coding challenges: https://edabit.com/
+
+
+
+**-->https://www.w3resource.com/php-exercises/php-basic-exercises.php
+=====================================================================
+http://www.mysqltutorial.org/mysql-sample-database.aspx
+=====================================================================
+https://www.thoughtco.com/php-login-script-p2-2693850
+
+=====================================================================
+Bootstrap 4 Table Editing
+https://editor.datatables.net/examples/simple/inTableControls.html
+
+Paragraph inline editing: https://www.youtube.com/watch?v=Vc55etlQ6sc
+
+=====================================================================
+
+https://www.sanfoundry.com/php-problems/
+
+
+Course Report Directory of Coding BOOTCAMPS
+https://www.coursereport.com/login
+user=support@jaxcodeacademy.com
+pass=a6f5f20c20ac9d420e03c34259aa650c
+------------------------
+
+How to get Multiple Checkbox values in php
+https://www.youtube.com/watch?v=McaG-w35w1A
+
+Styling
+https://mdbootstrap.com/components/bootstrap-checkbox/
+
+========================================================================
+TO DO:
+1. Financial Aid
+2. Veterans Benefits
+3. Online/In Person Hybrid (Same tuition)
+
+Users urls:
+Zach http://jaxcode54.zachd29.webfactional.com/
+========================================================================
+PHP Challenges
+https://coderbyte.com/
+========================================================================
+
+
+
+INFORMATICS BOOTCAMPS
+
+FOR ME: Apply thru ERAS:
+https://www.cdc.gov/phifp/application.html
+Application for the PHIFP Class of 2019 opens August 6, 2018.
+
+Health informatics is information engineering applied to the field of health care, essentially the management and use of patient healthcare information.
+
+Course will teach how to turn your ideas into functioning prototypes using HTML, CSS, Javascript, JQUERY, Bootstrap, PHP, and MySQL. Each student will be able to build an EMR application that is HIPAA compliant. In addition to class assignments students will help design and build real-world applications for healthcare.
+
+Health Informatics:
+Clinical Informatics
+Human-Computer Interaction
+Pharmacy Informatics
+Imaging Informatics
+
+EHR; CCD
+Patient Portals; PHR
+Telemedicine
+Calculators
+
+
+In 2016, research firm MarketsandMarkets projected that the health care IT solutions market would be valued at almost $229 billion by 2020, with a compound annual growth rate of more than 13 percent for the period of 2015 to 2020. For those who have the combination of health care knowledge and IT skills, there are a multitude of opportunities—yet demand for workers outstrips supply. As reported in findings of the 2017 HIMSS Leadership and Workforce Survey, “The majority of health IT employers (61 percent of vendors/consultants and 43 percent of providers) have positions they are looking to fill.”
+
+
+------------------------------------------------------------------------------------------
+SQL Injection prevention
+https://www.johnmorrisonline.com/validate-sanitize-user-input-php-using-filter_input-filter_var/
+------------------------------------------------------------------------------------------
+
+
+http://www.fldoe.org/policy/cie/new-institution-application.stml
+
+
+
+
+
+Web Faction Accounts
+=======================================
+jaxcode password=Jc@c@d3my
+jaxcodeshare password=q1w2e3r4t5
+mdilab has main site
+
+
+Sally: (same for WF and SFTP)
+smdajero.webfactional.com
+smdajero
+Diesel42*
+
+indexdrf.html
+
+=======================================
+username=jaxcodeacademy
+pass= jc@c@d3my
+github.com
+
+mac.github.com
+
+https://www.youtube.com/watch?v=0fKg7e37bQE
+
+https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
+
+https://www.youtube.com/watch?time_continue=949&v=E8TXME3bzNs
+
+
+========================================
+
+Bootstrap Templates
+https://startbootstrap.com/template-categories/all/
+
+Bootstrap website: https://getbootstrap.com/
+
+
+Assignment:
+https://blackrockdigital.github.io/startbootstrap-scrolling-nav/
+Spice up each section with text and images or movies
+
+=======================================
+Assignment for Monday
+PSD to HTML: https://1stwebdesigner.com/psd-to-html/
+https://1stwebdesigner.com/wp-content/uploads/2013/02/1.-Home.png
+
+Template: https://startbootstrap.com/template-overviews/bare/
+create a folder on Web Faction named 'bistros' for the website
+Bootstrap
+Font Awesome: https://fontawesome.com/
+Fonts: https://designshack.net/articles/css/the-10-best-script-and-handwritten-google-web-fonts/
+Favicon
+# links
+Reviews from database, 4 reviews, display 4 random
+Must work on all devices: Phone, Tablet, Computer
+Layout must match wireframe.  Web Design is up to you (color scheme).
+
+
+
+https://medium.freecodecamp.org/stephen-mayeux-shows-you-what-9-months-of-self-taught-coding-looks-like-50f4e6c3598f
+
+Online Whiteboard for Lectures
+http://collabedit.com/
+
+W3 School White Board to Use 
+https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic_document
+
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Page Title</title>
+<style>
+ul, radio, select,input, p, form { font-size:20px; }
+.anythingiwant { font-size: 20px; }
+</style>
+
+</head>
+
+<body>
+
+<h1>Registration</h1>
+<hr>
+<a href="http://google.com" target="_blank">Home</a> / Registration
+<hr>
+<img src="pulpitrock.jpg" alt="Mountain View" style="width:300px;">
+<p>Please use this form to sign up for our amazing website. There is no charge and all your data will be kept confidential. We promise. Signed Facebook.
+
+</p>
+
+
+<ul style="list-style-type:disc">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+
+<div style="padding-left:30px;padding-top:10px;">
+<p>
+<strong><em style="font-size:19px;color:#eb1d5d;">All fields are required</em></strong>
+<form>
+
+Name: <input type="text" name="name" required><br><br>
+
+Email: <input type="email" name="email" required><br><br>
+
+Phone: <input type="number" name="phone" required><br><br>
+
+Pick Favorite Color: 
+<select name="favoritecolor">
+<option value="blue">Blue</option>
+<option value="green">Green</option>
+<option value="red">Red</option>
+<option value="purple">Purple</option>
+</select>
+<br><br>
+
+I am a:<br>
+<input type="radio" name="gender" value="boy" style="height:20px; width:20px;"> Boy <br>
+<input type="radio" name="gender" value="girl" style="height:20px; width:20px;"> Girl<br>
+<br>
+Notes:<br>
+<textarea rows="6" cols="70" name="notes"></textarea>
+<br><br>
+<input type="checkbox" name="agree" value="yes" style="height:20px; width:20px;"> I agree to all terms
+<br><br>
+
+<div>
+<input type="submit" class="anythingiwant">
+</div>
+</form>
+</p>
+</div>
+
+</body>
+</html>
+
+--------------------------------------------
+Coding Challenge Websites
+https://medium.com/coderbyte/the-10-best-coding-challenge-websites-for-2018-12b57645b654
+
+Coderbyte full-stack web dev
+https://www.coderbyte.com/course/fullstack-web-development/
+--------------------------------------------
+
+
+PDO
+https://www.phpjabbers.com/how-to-prevent-sql-injection-with-php-php71.html
+
+--------------------------------------------
+Clear DNS for subdomains not working
+https://docs.webfaction.com/user-guide/domains.html#a-domain-still-resolves-to-a-previous-host
+
+---------------------------------------------
+
+GI Benefits
+to get state approval: http://www.nasaa-vetseducation.com/Contacts.aspx
+http://floridavets.org/about-us/contact-us/
+
+BUREAU OF STATE APPROVING FOR VETERANS' TRAINING
+FLORIDA DEPARTMENT OF VETERANS AFFAIRS
+Visit Web Site
+9500 Bay Pines Boulevard, Room 214
+Bay Pines, FL 33744
+Phone: 727-319-7402
+Fax: 727-319-7781
+
+Coding bootcamps that accept GI Bill:
+https://www.techrepublic.com/article/veterans-heres-which-coding-bootcamps-will-accept-your-gi-bill/
+------------------------------
+Yard Signs
+Store pickup 2 items
+Ready for pickup on - 04/18/2018 7:00 PM
+Pickup Store
+   #433
+2050 SOUTH 3RD STREET
+S 3RD ST & BEACH BLVD
+JACKSONVILLE BEACH, FL 32250
+(904) 249-0084
+
+-----------------
+VENUE
+
+Andrea Snell
+
+Email: andrea.snell@unf.edu  
+
+Phone: (904) 620-1893
+
+Fax: (904) 620-1897   
+
+Andrea says try the Registrar first.  If they can't help call her back and we can try to figure something out.
+
+Talked to Christina in the Registrar office:
+2 choices besides Fine Arts
+
+Student Union
+904 620 2525
+spces in student union
+Fill out form
+Off campus coord: 
+l.diangelo@unf.edu
+Lindsay 
+
+
+Lindsay DiAngelo
+Events and Reservations Coordinator
+
+E-mail: l.diangelo@unf.edu 
+
+Phone: (904) 620-1075
+
+Herbert 
+904 620 4222
+
+https://www.unf.edu/studentunion/Event_Floor_Plans.aspx
+
+----------------------------------------------------------------
+MARKETING
+
+https://www.uprinting.com/every-door-direct-mail.html
+
+High schools
+
+Yard signs
+
+Radio ads
+
+UNF Digital Signage
+The Student Union provides state-of-the-art digital signage for event information and campus advertising. All ad requests are subject to approval before being posted. No advertisements of alcohol, tobacco, or drugs. This service is only available to events hosted at UNF and their direct affiliates. Student Union activities will receive priority viewing.
+
+Dated slides (short-term) are permitted to be posted up to 2 weeks prior to an event and will be deleted the day following the event
+All long-term slides (without a scheduled ending date) are permitted to be posted for a maximum duration of 1 month. Slides may be resubmitted at this time or new slides for the same organization may be posted. This is to keep the screens new and exciting to view rather than displaying the same slides for months.
+Slides are viewed one time per loop for a duration of 15 seconds (excluding the daily schedule)
+Slides must be static images. No animation, audio, or video
+Slides must fit: Please respect a 5 MB limit on email attachments. Slides should fit the 1920 px by 1080 px size of the screen. In inches it would be 6.4 by 3.6. JPG is the preferred format. Slides may also be submitted in PPT format. If so, the size of the slide must be changed from 4:3 to 16:9 in the Page Setup menu.
+Please send any slide requests to sumarketing@unf.edu. Expected posting time is within 2 business days.
+
+
+
+PROMOTIONS
+
+Started FB Event Boost on Apr 12 and it will run for 39 days with a $100 budget
+Started 2 more ads
+
+Sent note to Iron Hack 4/13
+
+Sent Letter to Guidance Counselors at Ponte Vedra High School 4/13
+
+************************************THIS******************************************
+https://www.epicodus.com/blog/how-to-start-a-coding-school
+At that point, I felt ready to run my first Epicodus class. I spent a couple months getting the curriculum ready and promoting the class: I announced at local meetups, emailed local tech mailing lists, posted on online forums, and listed our classes on several websites for coding schools.
+https://www.learnhowtoprogram.com <--HERE #$%^&*()
+************************************THIS******************************************
+
+
+------------------------------------------------------------------------------------------
+FACEBOOK
+
+Event:
+https://www.facebook.com/events/185844062036289/
+
+Page:
+https://www.facebook.com/jaxcodeacademy/
+
+The username @jaxcodeacademy has been created for Jax Code Academy.
+It's now easier for people to find your Page in search. People can also visit your Page at fb.me/jaxcodeacademyand send your Page messages at m.me/jaxcodeacademy.
+------------------------------------------------------------------------------------------
+Businesses to contact for website makeovers
+
+1. https://balancedphysiciancare.com/
+
+2. https://jacksonvillebeachdentist.com/
+
+3. http://www.kartsonisdermatology.com/
+
+4. Jacksonville Golf and Country Club
+https://www.jaxgcc.com/golf
+
+5. http://handsonchildrensmuseumjax.com/
+
+6. http://www.stfrancisinthefield.net/
+
+------------------------------------------------------------------------------------------
+https://www.w3schools.com/
+
+URGENT FOR ME: W3 School Javascript https://www.w3schools.com/js/js_intro.asp
+Learn Python: https://www.w3schools.in/python-tutorial/
+from: Top 5 languages to learn, with Python number 1 and easiest: https://www.youtube.com/watch?v=f3EbDbm8XqY
+
+W3 Schools new site: https://www.w3schools.in/category/html-tutorial/
+
+FIND A CLASSROOM:
+UNF: https://www.unf.edu/fineartscenter/Rentals/Facilities_Rental.aspx
+
+
+Jax Coding Academy
+"Bootcamp Prep Program"
+jaxcoding.com
+jaxcodeacademy.com [MAIN]
+
+------------------------------------------------------------------------------------------
+Mailboxes
+
+https://webmail.webfaction.com
+mailbox=jca_support
+email=support@jaxcodeacademy.com
+password=@c@demy
+
+------------------------------------------------------------------------------------------
+Web Faction Trial Account
+
+Ends June 14
+
+jaxcode
+sbf...
+
+------------------------------------------------------------------------------------------
+PAYPAL
+email=support@jaxcodeacademy.com
+password=sbf...
+------------------------------------------------------------------------------------------
+MailChimp
+
+sfitzmeyer@gmail.com
+jaxcodeacademy
+password=JC@c@d3my
+
+------------------------------------------------------------------------------------------
+https://web534.webfaction.com/phpMyAdmin/
+
+Database
+$servername = "localhost";
+$username = "jaxcodeacademy";
+$password = "Jc@c@d3my";
+$dbname = "jaxcodeacademy";
+
+Paypal Terminal from Themeforest Code
+frontend: https://jaxcode.com/paypal-advanced-payment-terminal
+admin: https://jaxcode.com/paypal-advanced-payment-terminal/admin.php
+$username = "drfitzmeyer";
+$password = "sbf...";
+$dbname = "jaxcodeacademy";
+
+------------------------------------------------------------------------------------------
+Thank you for submitting your payment to Florida Department of State, Division of Corporations. This email will serve as confirmation that your payment was received by our office. 
+Your filing will be posted on our website http://www.sunbiz.org/ within 1-3 business days.
+
+The transaction information is listed below:
+
+Receipt Number:	3725137405
+Transaction Date/Time:	3/23/2018 7:33:15 PM
+Card Number:	XXXX XXXX XXXX 5608
+Card Type:	MasterCard
+Approval Code:	09476Z
+Payment Amount:	$50.00
+Document Number:	NEW
+------------------------------------------------------------------------------------------
+Franchising
+
+1. Does not require permanent structure.  Rent space from local college.
+2. Target High School Students for Summer Pre-bootcamps.
+3. 4 Summer Bootcamps from May to August.
+4. Local business web development year round.
+
+Franchises Package:
+Free passes to Web Dev Bootcamp and to Teacher Bootcamp
+Lesson Plans 
+Help Finding a Venue
+Franchise City added to JCA Website (dates/times/location/venue)
+Yard Signs
+
+------------------------------------------------------------------------------------------
+
+********** https://techbeacon.com/complete-guide-top-24-coding-bootcamps **********
+
+Guide to Bootcamp Financing: https://www.coursereport.com/blog/ultimate-guide-to-coding-bootcamp-loans-financing
+
+FLORIDA BOOTCAMPS 
+Gainesville $7,000 http://gainesvilledevacademy.com/
+Miami $11,000 https://www.ironhack.com/en
+Florida https://www.bloc.io/learn-to-code/coding-bootcamps/states/florida
+
+The top 40 coding schools in the world - rankings, reviews, and expert advice
+https://www.switchup.org/research/best-coding-bootcamps
+
+Prep Programs:
+https://www.coursereport.com/blog/coding-bootcamp-prep-programs-the-ultimate-guide
+
+Target Marketing: High Schools; kids that don't want to or can't afford college.
+
+Go to Coding Bootcamp well prepared! It's tough and you don't want to start from nothing and fail to keep up and flunk out.
+
+You will get WAY MORE out of a coding bootcamp if you know skills before attending.
+
+Over 300 coding bootcamps to choose from.
+
+Use our course to get into an elite bootcamp or to be well prepared when you start.  You can also gain on the job experience to add to your resume.
+
+Half of the highest-paying jobs in America now require this skill: https://www.marketwatch.com/story/half-of-the-high-paying-jobs-in-america-now-require-this-skill-2016-06-21
+
+WAYUP.COM Jobs and Internships for people with little to no experience: https://www.wayup.com
+
+FREE ONLINE JAVASCRIPT COURSE: https://flatironschool.com/programs/online-intro-javascript-free-course/?utm_campaign=Sponsored_Content&utm_medium=Bootcamp%20Prep%20Article&utm_source=SwitchUp&utm_term=Intro%20to%20JavaScript
+
+FREE PREP COURSE: https://flatironschool.com/programs/online-bootcamp-prep-course/?utm_campaign=Sponsored_Content&utm_medium=Bootcamp%20Prep%20Article&utm_source=SwitchUp&utm_term=Bootcamp%20Prep%20Course
+
+Others:
+http://www.codingdojo.com/
+https://www.fullstackacademy.com
+https://www.galvanize.com/new-york/web-development#outcomes
+
+TIPS ON GETTING A JOB AFTER BOOTCAMP: https://medium.freecodecamp.org/5-key-learnings-from-the-post-bootcamp-job-search-9a07468d2331
+
+GRID
+
+Galvanize Bootcamp
+NUMBER OF GRADUATES
+667+
+PLACEMENT RATE
+87%
+AVERAGE STARTING SALARY
+$70,221
+
+Financing:
+https://skills.fund/
+
+Web Camp
+Use the sailing loft space
+Full Stack Web Developer
+Web Development Bootcamp
+
+Intensive courses in Web Development
+
+https://www.ironhack.com/en
+
+https://medium.com/bits-and-behavior/what-i-learned-from-researching-coding-bootcamps-f594c15bd9e0
+
+************
+Pre Bootcamp
+4 weeks or 3 weeks or 2 weeks or 1 week
+$4000 or $3000 or $2000 or $1000
+How to get into coding bootcamp: http://blog.flatironschool.com/how-to-get-into-flatiron-school-6-ways-to-make/
+Guide for me to follow: https://www.codecademy.com/
+
+https://www.coursereport.com/coding-bootcamp-ultimate-guide
+
+Develop a reputation for providing great students for elite bootcamps
+Develop a community relationship with local businesses for low cost professional websites
+
+WHAT YOU WILL GET OUT OF IT:
+1. Increase your chance of getting accepted to an elite coding Bootcamp
+2. Start your own business making websites for local businesses
+
+========
+LIST OF PREP PROGRAMS WITH COSTS: 
+https://www.coursereport.com/blog/coding-bootcamp-prep-programs-the-ultimate-guide
+Many competitive coding bootcamps require a certain level of coding knowledge or background in order to be accepted into their programs- whether they’re looking for past experience on your resume or require that you pass a coding challenge. For a beginner, it can be tough to get the experience that a selective bootcamp looks for in the application process. There are many ways to learn basic coding (including teaching yourself) but if you want to make sure you’re covering the right material and quickly, then a bootcamp prep program may be for you.
+========
+
+JUST FOR THE SUMMER?? 3 months
+
+June 4 - 29 (4 weeks)
+July 9 - Aug 3 (4 weeks)
+Aug 6 - 31 (4 weeks)
+
+May 21 - June 8 (3 weeks)
+June 11 - June 29 (3 weeks)
+July 9 - July 27 (3 weeks)
+July 30 - August 24 (3 weeks)
+
+Class for 1st half of day
+Intern 2nd half on real projects
+
+Syllabus
+========
+Web Basics
+Setting up your environment
+Basic HTML page
+HTML-->CSS
+HTML Form-->pass to another form-->process data-->email/mysql/PHP
+Github Overview-->Bootstrap-->Javascript-->JQuery-->JQuery Mobile-->AJAX-->PHP-->MySQL
+Wordpress-->WooCommerce
+Apache-->Linux-->Data structures and algorithms
+Template-->Your project
+Extra-->Real business website
+
+https://themeforest.net/item/moticv-resume-cv-html5-template/18665155?s_rank=40
+https://www.w3schools.com/default.asp
+
+Method: plug and chug. anything rote and extremely repetitive which doesn't require any thinking. (particularly involving math problems). It refers to inserting one variable "x" (the plug) into an equation and get a result "y" (the chug).
+
+Get Bootstrap TEMPLATES (FORMS): https://getbootstrap.com/docs/4.0/examples/
+
+The structure of our project should look like this:
+index.html
+	js
+	images
+	css
+	
+Just like literacy opens up the whole world of books, coding literacy opens up a whole world of being able to create websites, apps, games, and even little robots.
+
+BASICS
+======
+Web Basics
+Setting Up your work environment Sublime Text https://www.sublimetext.com/3 | Photoshop for students $9.99 month: https://www.adobe.com/creativecloud/buy/students.html?sdid=KKTJB&mv=search&s_kwcid=AL!3085!3!102779761342!b!!g!!photoshop%20cc%20for%20students&ef_id=WSc87AAAAs1dY7VJ:20180322085228:s
+Photoshop Free Trial: https://www.adobe.com/creativecloud/catalog/desktop.html?promoid=H4B1XXPP&mv=other
+HTML
+CSS
+MySQL
+Github
+Bootstrap
+Javascript https://www.w3schools.com/js/js_intro.asp
+JQuery
+JQuery Mobile
+AJAX
+PHP
+SSH
+HTTP / HTTPS
+Terminal Usage — Basic Mac OS, Basic Windows
+Data Structures & Alogrithms
+Character Encodings
+
+Wordpress, WooCommerce
+Apache
+Linux
+Data structures and algorithms [https://www.geeksforgeeks.org/top-algorithms-and-data-structures-for-competitive-programming/]
+
+*****THIS IS THE MAIN FLOW OF MY CODING CAMP
+FORMS: html, css, php, SESSIONS, POST, GET, HTML5, JQuery, Bootstrap, MySQL, SQL
+(Can build a whole course off of this concept)
+
+Guide: https://www.freecodecamp.org
+
+Create real websites for local businesses. 
+
+
+Shortcuts of the Pros
+=====================
+Templates
+
+
+Internships
+=====================
+Work on real projects for resume
+
+
+================
+<br><br>
+									The average starting salary of a web developer who graduates from a coding bootcamp is $70,000 with at least 80% obtaining a job within six months. The average cost of a coding bootcamp is $11,000 (financing available) combined with our prep course, which is $2,500, so you can expect to pay around $15,000 and be ready to job hunt in 4 to 6 months. The immediate return on investment is obvious but is even more substantial if you factor in the savings of not attending a college program. While college students are spending $10,000 to $60,000 per year in tuition, and years in school, you will be working and earning money the whole time.<br><br>
+									There are typically over 5,000 active job postings for web developers on Indeed.com at any time, with an estimated average annual salary of over $91K in the United States. The average annual salary for front end web developers is even higher, at $102K. Practically every organization in existence is finding and interacting with people via the web, making the position of web developer one of the most sought after.
+									
+----------------
+									
+Enemy: https://www.facebook.com/patovrgs
+
+
+========================================================================================
+
+Junior Web Dev Enrollees
+
+1.
+Course Dates: July 9 - July 27, 2018
+Name: Dennis Swiggett
+Email: dennisswiggett11@aol.com
+Phone: 9049452183
+Address: 1205 Musket Ridge Road
+Payment Option: Prepay $995 tuition before class starts
+
+2.
+Course Dates: July 9 - July 27, 2018
+Name: SALLY M DAJERO
+Email: DAJEROSM@AOL.COM
+Phone: 9044019344
+Address: 120 MAYPORT RD LOT 18
+ATLANTIC BEACH FL 32233
+Payment Option: Pay $2,500 tuition after I get a job (10 monthly payments of $250)
+
